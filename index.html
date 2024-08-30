@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c82292ab9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -36,23 +37,66 @@
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugiat totam optio et error ducimus, possimus assumenda modi velit, ea, quod quos voluptate suscipit pariatur recusandae. Expedita provident labore esse! </p>
+                   
                    <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                    </div>
-                   <div class="tab-contents">
+
+                   <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
                             <li><span>Web dev</span><br> Web app Development</li>
                             <li><span>Editing</span><br>Photo/Video Editing</li>
                         </ul>
                    </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Now </span><br>UI/UX Design Training IT Institute</li>
+                        <li><span>2018 - 2021</span><br> Team Lead at StartApp LLC</li>
+                        <li><span>2017 - 2018 </span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br> Intern at StartApp LLC</li>                       
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>Marticulation form APS Sargodha</li>
+                        <li><span>2022</span><br></li>FSC form Sir Syed College
+                        <li><span>2023 - 2027 </span><br>BSE from Comsats Islamabad</li>
+                    </ul>
+                 </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, facilis libero? Assumenda veniam nam exercitationem placeat voluptate perferendis, eveniet, tenetur accusantium ex dolorum facere consectetur ipsa. Quam dicta sunt minus!</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, facilis libero? Assumenda veniam nam exercitationem placeat voluptate perferendis, eveniet, tenetur accusantium ex dolorum facere consectetur ipsa. Quam dicta sunt minus!</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, facilis libero? Assumenda veniam nam exercitationem placeat voluptate perferendis, eveniet, tenetur accusantium ex dolorum facere consectetur ipsa. Quam dicta sunt minus!</p>
+                    <a href="#">Learn more</a>
+                 </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="script.js"></script>
