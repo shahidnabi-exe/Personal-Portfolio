@@ -8,6 +8,13 @@
 html{
     scroll-behavior: smooth;
 }
+.logo {
+    width: 99px;
+    margin-left: 30px;
+    margin-top: 40px; 
+            
+    
+}
 
 body{
     background: #080808;
@@ -65,6 +72,11 @@ nav ul li a:hover:after{
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    margin-left: 20px;
+}
+.header-text p{
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .header-text h2 {
