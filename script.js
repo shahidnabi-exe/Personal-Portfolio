@@ -1,7 +1,15 @@
 
 let tabcontents = document.getElementsByClassName("tab-contents");
 let tablinks = document.getElementsByClassName("tab-links");
+let sidemenu = document.getElementById("sidemenu");
 
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
 function opentab(tabname) {
     for(tabcontent of tabcontents){
         tabcontent.classList.remove("active-tab");

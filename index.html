@@ -12,13 +12,15 @@
         <div class="container">
         <nav>
             <img src="Images/logo.png" class="logo" alt="Shahid Logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#Portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
 
             <div class="header-text">
@@ -33,11 +35,11 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="Images/user.png" alt="">
+                    <img src="Images/ff.jpg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
-                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugiat totam optio et error ducimus, possimus assumenda modi velit, ea, quod quos voluptate suscipit pariatur recusandae. Expedita provident labore esse! </p>
+                   <p> Hi, My name is Shahid Nabi. I am a passionate web developer with a strong foundation in front-end and back-end technologies. With expertise in HTML, CSS, JavaScript, and a growing proficiency in React, Node.js, and MongoDB, I thrive on building dynamic and responsive web applications. </p>
                    
                    <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -49,7 +51,7 @@
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
                             <li><span>Web dev</span><br> Web app Development</li>
-                            <li><span>Editing</span><br>Photo/Video Editing</li>
+                            <li><span>Design</span><br>Graphic Design</li>
                         </ul>
                    </div>
                    <div class="tab-contents" id="experience">
@@ -80,19 +82,19 @@
                  <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, facilis libero? Assumenda veniam nam exercitationem placeat voluptate perferendis, eveniet, tenetur accusantium ex dolorum facere consectetur ipsa. Quam dicta sunt minus!</p>
+                    <p>As a web designer, I specialize in creating visually appealing and user-friendly websites. From responsive layouts to modern aesthetics, I ensure every design is tailored to your brand and delivers a seamless user experience. </p>
                     <a href="#">Learn more</a>
                  </div>
                  <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, facilis libero? Assumenda veniam nam exercitationem placeat voluptate perferendis, eveniet, tenetur accusantium ex dolorum facere consectetur ipsa. Quam dicta sunt minus!</p>
+                    <p>I offer comprehensive UI/UX design services focused on creating intuitive, user-centered interfaces. My process involves thorough research, wireframing, and prototyping to ensure designs not only look great but are also easy to navigate and highly functional.</p>
                     <a href="#">Learn more</a>
                  </div>
                  <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>Graphic Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, facilis libero? Assumenda veniam nam exercitationem placeat voluptate perferendis, eveniet, tenetur accusantium ex dolorum facere consectetur ipsa. Quam dicta sunt minus!</p>
+                    <p>As a graphic designer, I bring your ideas to life through creative visuals that resonate with your audience.My goal is to create eye-catching and memorable designs that effectively communicate your message and elevate your brand presence.</p>
                     <a href="#">Learn more</a>
                  </div>
             </div>
@@ -106,17 +108,17 @@
                 <div class="work">
                     <img src="Images/work-1.png" >
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>This app connects you the most talented ppl around the world. Download it from the play store</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Snake Web App</h3>
+                        <p>"Get Addicted to the Endless Chase – Play Now!". Download it from the link below</p>
+                        <a href="https://github.com/shahidnabi-exe/Snake-Game-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="Images/work-2.png" >
+                    <img src="Images/work-2.png" >  
                     <div class="layer">
                         <h3>Music Player </h3>
-                        <p>This app connects you the most talented ppl around the world. Download it from the play store</p>
-                        <a href="#"><i class="fa-solid   fa-arrow-up-right-from-square"></i></a>
+                        <p>"Music at Your Fingertips – Play, Pause, Enjoy!". Download it from the link below </p>
+                        <a href="https://github.com/shahidnabi-exe/Music-Player"><i class="fa-solid   fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -138,12 +140,12 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>shahidnabi077@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>0323432423</p>
+                    <p><i class="fa-solid fa-square-phone"></i>03211136587</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/shahid.nabi.944023"><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/shahid._.07._/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shahid-nabi-57b341258/"><i class="fa-brands fa-linkedin"></i></a>
 
                     </div>
                     <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
