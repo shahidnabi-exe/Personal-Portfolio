@@ -11,16 +11,20 @@ function closemenu(){
     sidemenu.style.right = "-200px";
 }
 function opentab(tabname) {
-    for(tabcontent of tabcontents){
+    let tabcontents = document.getElementsByClassName("tab-contents");
+    let tablinks = document.getElementsByClassName("tab-links");
+
+    for (let tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
-    for(tablink of tablinks){
+    for (let tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab")
 
+    document.getElementById(tabname).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
 }
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyFYDtU5L7PeN5fjJcKh1x01jOflBXL1RuhVL5GDz4QMtHemqxixCLvBt-x2eZvvk4p/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")

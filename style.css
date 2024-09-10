@@ -11,23 +11,25 @@ html{
 .logo {
     width: 99px;
     margin-left: 30px;
-    margin-top: 40px; 
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Add some rounding to match the design aesthetics */
             
-    
 }
 
 body{
     background: #080808;
     color: #fff;
-
 }
 
 #header{
     width: 100vw;
     height: 100vh;
-    background-image: url(Images/background.png);
+    background-image: url('Images/background.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: overlay; 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container{
@@ -73,10 +75,12 @@ nav ul li a:hover:after{
     margin-top: 20%;
     font-size: 30px;
     margin-left: 20px;
+    color: #fff;
 }
 .header-text p{
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
+    color: #ff004f;
 }
 
 .header-text h2 {
@@ -372,6 +376,13 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(Images/phonebgjpg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .logo {
+        width: 70px;
     }
     .header-text{
         margin-top: 50%;
