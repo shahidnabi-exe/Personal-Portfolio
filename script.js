@@ -1,3 +1,4 @@
+
 let tabcontents = document.getElementsByClassName("tab-contents");
 let tablinks = document.getElementsByClassName("tab-links");
 let sidemenu = document.getElementById("sidemenu");
